@@ -18,13 +18,6 @@ public class Calculator {
             System.out.println("Выберете желаемое действие:");
             System.out.println("1 - Сложение\n2 - Вычитание\n3 - Умножение\n4 - Возведение в степень\n5 - Вычисление факториала числа\n6- Вычисление значения заданного числа Фибоначчи");
             choice = sc.nextInt();
-            switch (choice) {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
                     if (choice == 1) { //addition of two numbers
                         System.out.println("Введите первое число:");
                         db1 = sc.nextDouble();
@@ -89,10 +82,9 @@ public class Calculator {
                         System.out.println("Ваше число = " + b + "\n");
 
                     }
-            }
             System.out.println("You want to continue? y : n :");
             exit = sc.next();
-        }while (exit.equals("y"));
+        }while ("y".equals(exit));
     }
 }
 
